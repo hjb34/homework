@@ -365,6 +365,39 @@ ul li {
   list-style: none;
 }
 
+main {
+  display: grid;
+  grid-template-areas: "header" "search" "hero" "planning" "hero-2" "new" "footer";
+}
+
+.header {
+  grid-area: header;
+}
+
+.search {
+  grid-area: search;
+}
+
+.hero {
+  grid-area: hero;
+}
+
+.planning {
+  grid-area: planning;
+}
+
+.hero-2 {
+  grid-area: hero-2;
+}
+
+.new {
+  grid-area: new;
+}
+
+.footer {
+  grid-area: footer;
+}
+
 /* =============
     Typography
 ============= */
