@@ -4,7 +4,7 @@
     {
       "name" : "Process All Remaining Files and Folders",
       "stepType" : 1,
-      "uuidString" : "FE684271-E5E7-4F92-8D90-165AAE1012A2"
+      "uuidString" : "85A98082-16A0-4E96-A479-87ECEA15B556"
     }
   ],
   "creatorBuild" : "34127",
@@ -225,7 +225,7 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/content\/hero-2.html",
-      "oF" : 0
+      "oF" : 1
     },
     "\/dev\/content\/hero.kit" : {
       "cB" : 0,
@@ -233,7 +233,7 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/content\/hero.html",
-      "oF" : 0
+      "oF" : 1
     },
     "\/dev\/content\/new.kit" : {
       "cB" : 0,
@@ -241,7 +241,7 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/content\/new.html",
-      "oF" : 0
+      "oF" : 1
     },
     "\/dev\/content\/planning.kit" : {
       "cB" : 0,
@@ -249,7 +249,7 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/content\/planning.html",
-      "oF" : 0
+      "oF" : 1
     },
     "\/dev\/content\/search.kit" : {
       "cB" : 0,
@@ -257,7 +257,7 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/content\/search.html",
-      "oF" : 0
+      "oF" : 1
     },
     "\/dev\/global\/footer.kit" : {
       "cB" : 0,
@@ -297,7 +297,7 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/index.html",
-      "oF" : 2
+      "oF" : 3
     },
     "\/dev\/js\/scripts.js" : {
       "bF" : 0,
@@ -305,8 +305,8 @@
       "ma" : 0,
       "mi" : 1,
       "oA" : 0,
-      "oAP" : "\/deploy\/js\/scripts-min.js",
-      "oF" : 2,
+      "oAP" : "\/dev\/js\/scripts-min.js",
+      "oF" : 0,
       "sC" : 3,
       "tS" : 0
     },
@@ -458,8 +458,8 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/css\/styles.css",
-      "oF" : 2,
+      "oAP" : "\/dev\/scss\/styles.css",
+      "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
@@ -472,11 +472,11 @@
 
   },
   "projectAttributes" : {
-    "creationDate" : 638646927.49306905,
+    "creationDate" : 640048211.40551305,
     "displayValue" : "homework",
     "displayValueWasSetByUser" : 0,
-    "iconImageName" : "meme-chloe",
-    "iconImageWasSetByUser" : 1
+    "iconImageName" : "brackets-red",
+    "iconImageWasSetByUser" : 0
   },
   "projectSettings" : {
     "abortBuildOnError" : 1,
