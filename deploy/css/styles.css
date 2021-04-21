@@ -371,7 +371,7 @@ main {
 }
 @media (min-width: 768px) {
   main {
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas: "header header header header header header" "search search search search search search" "hero hero hero hero hero hero" "planning planning planning planning planning planning" "hero-2 hero-2 hero-2 hero-2 hero-2 hero-2" "new new new new new new" "footer footer footer footer footer footer";
   }
 }
 
