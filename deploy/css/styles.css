@@ -369,11 +369,6 @@ main {
   display: grid;
   grid-template-areas: "header" "search" "hero" "planning" "hero-2" "new" "footer";
 }
-@media (min-width: 768px) {
-  main {
-    grid-template-areas: "header header header header header header" "search search search search search search" "hero hero hero hero hero hero" "planning planning planning planning planning planning" "hero-2 hero-2 hero-2 hero-2 hero-2 hero-2" "new new new new new new" "footer footer footer footer footer footer";
-  }
-}
 
 .header {
   grid-area: header;
@@ -444,6 +439,14 @@ main {
 
 .new {
   grid-area: new;
+}
+.new ul {
+  display: grid;
+}
+@media (min-width: 768px) {
+  .new ul {
+    grid-template-columns: repeat(12, 1fr);
+  }
 }
 
 .footer {

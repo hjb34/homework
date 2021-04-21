@@ -25,17 +25,6 @@ main {
 		"hero-2"
 		"new"
 		"footer";
-
-	@include md {
-		grid-template-areas:
-			"header header header header header header"
-			"search search search search search search"
-			"hero hero hero hero hero hero"
-			"planning planning planning planning planning planning"
-			"hero-2 hero-2 hero-2 hero-2 hero-2 hero-2"
-			"new new new new new new"
-			"footer footer footer footer footer footer";
-	}
 }
 
 .header {
@@ -117,6 +106,16 @@ main {
 
 .new {
 	grid-area: new;
+
+	ul {
+		display: grid;
+	}
+
+	@include md {
+		ul {
+			grid-template-columns: repeat(12, 1fr);
+		}
+	}
 }
 
 .footer {
