@@ -369,6 +369,11 @@ main {
   display: grid;
   grid-template-areas: "header" "search" "hero" "planning" "hero-2" "new" "footer";
 }
+@media (min-width: 768px) {
+  main {
+    grid-template-columns: repeat(12, 1fr);
+  }
+}
 
 .header {
   grid-area: header;
@@ -386,7 +391,17 @@ main {
 }
 .hero a {
   display: grid;
-  grid-template-columns: 500px auto;
+}
+@media (min-width: 768px) {
+  .hero ul {
+    grid-template-columns: repeat(12, 1fr);
+  }
+  .hero ul .truck {
+    grid-column: span 5;
+  }
+  .hero ul .location {
+    grid-column: span 7;
+  }
 }
 
 .planning {

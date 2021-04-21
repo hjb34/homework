@@ -25,6 +25,10 @@ main {
 		"hero-2"
 		"new"
 		"footer";
+
+	@include md {
+		grid-template-columns: repeat(12, 1fr);
+	}
 }
 
 .header {
@@ -44,7 +48,20 @@ main {
 
 	a {
 		display: grid;
-		grid-template-columns: 500px auto;
+		// grid-template-columns: 300px auto;
+	}
+
+	@include md {
+		ul {
+			grid-template-columns: repeat(12, 1fr);
+
+			.truck {
+				grid-column: span 5;
+			}
+			.location {
+				grid-column: span 7;
+			}
+		}
 	}
 }
 
