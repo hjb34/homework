@@ -424,6 +424,23 @@ main {
 .hero-2 {
   grid-area: hero-2;
 }
+.hero-2 ul {
+  display: grid;
+}
+@media (min-width: 768px) {
+  .hero-2 ul {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
+  .hero-2 .truck-1 {
+    grid-column: span 8;
+    grid-row: span 6;
+  }
+  .hero-2 .truck-2 {
+    grid-column: span 4;
+    grid-row: span 6;
+  }
+}
 
 .new {
   grid-area: new;
@@ -458,3 +475,6 @@ main {
 /* =============
     Footer
 ============= */
+.hero-2 .truck-3 {
+  display: none;
+}
