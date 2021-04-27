@@ -1,0 +1,35 @@
+.new-image {
+	background-size: cover;
+	width: 350px;
+	height: 180px;
+}
+
+#new-gallery-1 {
+	.new-image {
+		background: url("/deploy/img/new/gallery-1.jpg") no-repeat;
+	}
+}
+
+#new-gallery-2 {
+	.new-image {
+		background: url("/deploy/img/new/gallery-2.jpg") no-repeat;
+	}
+}
+
+#new-gallery-3 {
+	.new-image {
+		background: url("/deploy/img/new/gallery-3.jpg") no-repeat;
+	}
+}
+
+#new-gallery-4 {
+	.new-image {
+		background: url("/deploy/img/new/gallery-4.jpg") no-repeat;
+	}
+}
+
+#new-gallery-5 {
+	.new-image {
+		background: url("/deploy/img/new/gallery-5.jpg") no-repeat;
+	}
+}
