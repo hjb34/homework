@@ -505,6 +505,14 @@ main {
 /* =============
     Footer
 ============= */
+.hero-img {
+  background: url("../../../deploy/img/hero/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  width: 100%;
+}
+
 .hero-2 .truck-3 {
   display: none;
 }
