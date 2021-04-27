@@ -93,19 +93,7 @@ main {
 
 	@include md {
 		ul {
-			grid-template-columns: repeat(12, 1fr);
-			grid-template-rows: repeat(6, 1fr);
-		}
-		img {
-			width: 100%;
-		}
-		.truck-1 {
-			grid-column: span 8;
-			grid-row: span 6;
-		}
-		.truck-2 {
-			grid-column: span 4;
-			grid-row: span 6;
+			grid-template-columns: 50% auto;
 		}
 	}
 }
