@@ -410,9 +410,12 @@ main {
 }
 .planning .plan {
   display: grid;
-  grid-template-columns: 400px auto;
+  grid-template-columns: 70% auto;
 }
 @media (min-width: 768px) {
+  .planning .plan {
+    grid-template-columns: 400px auto;
+  }
   .planning ul {
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 20px;
@@ -531,27 +534,30 @@ main {
 }
 
 .new-image {
-  background-size: cover;
-  width: 350px;
   height: 180px;
 }
 
 #new-gallery-1 .new-image {
   background: url("/deploy/img/new/gallery-1.jpg") no-repeat;
+  background-size: cover;
 }
 
 #new-gallery-2 .new-image {
   background: url("/deploy/img/new/gallery-2.jpg") no-repeat;
+  background-size: cover;
 }
 
 #new-gallery-3 .new-image {
   background: url("/deploy/img/new/gallery-3.jpg") no-repeat;
+  background-size: cover;
 }
 
 #new-gallery-4 .new-image {
   background: url("/deploy/img/new/gallery-4.jpg") no-repeat;
+  background-size: cover;
 }
 
 #new-gallery-5 .new-image {
   background: url("/deploy/img/new/gallery-5.jpg") no-repeat;
+  background-size: cover;
 }
