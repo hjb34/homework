@@ -548,6 +548,20 @@ header {
   background: #d1ab00;
 }
 
+.planning .plan {
+  margin: 20px 0;
+  padding: 20px;
+  background: #f8f9fa;
+}
+.planning .plan button {
+  background: #ffd205;
+  padding: 10px 20px;
+  border: none;
+}
+.planning .plan button:hover {
+  background: #9e8200;
+}
+
 .hero-2 {
   width: 100%;
 }
