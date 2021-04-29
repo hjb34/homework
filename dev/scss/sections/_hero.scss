@@ -5,3 +5,24 @@
 	height: 700px;
 	width: 100%;
 }
+
+.hero {
+	ul {
+		.details a {
+			color: $aztec;
+			padding: 20px;
+		}
+		.truck a {
+			background: $corn;
+			&:hover {
+				background: darken($corn, 10%);
+			}
+		}
+		.location a {
+			background: $tangerine;
+			&:hover {
+				background: darken($tangerine, 10%);
+			}
+		}
+	}
+}

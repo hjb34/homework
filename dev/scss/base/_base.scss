@@ -54,6 +54,7 @@ main {
 
 	a {
 		display: grid;
+		grid-template-columns: 75% auto;
 	}
 
 	@include md {

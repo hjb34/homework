@@ -394,6 +394,7 @@ main {
 }
 .hero a {
   display: grid;
+  grid-template-columns: 75% auto;
 }
 @media (min-width: 768px) {
   .hero ul {
@@ -528,6 +529,23 @@ header {
   background-position: center;
   height: 700px;
   width: 100%;
+}
+
+.hero ul .details a {
+  color: #2a3036;
+  padding: 20px;
+}
+.hero ul .truck a {
+  background: #e2ba06;
+}
+.hero ul .truck a:hover {
+  background: #b09105;
+}
+.hero ul .location a {
+  background: #ffd205;
+}
+.hero ul .location a:hover {
+  background: #d1ab00;
 }
 
 .hero-2 {
