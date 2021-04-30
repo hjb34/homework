@@ -448,9 +448,25 @@ main {
 }
 @media (min-width: 768px) {
   .new ul {
-    grid-template-columns: 350px 350px;
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 30px;
     justify-content: center;
+    grid-template-areas: "new-1 new-1 new-2 new-2" "new-3 new-3 new-4 new-4" ". new-5 new-5 .";
+  }
+  .new #new-gallery-1 {
+    grid-area: new-1;
+  }
+  .new #new-gallery-2 {
+    grid-area: new-2;
+  }
+  .new #new-gallery-3 {
+    grid-area: new-3;
+  }
+  .new #new-gallery-4 {
+    grid-area: new-4;
+  }
+  .new #new-gallery-5 {
+    grid-area: new-5;
   }
 }
 
