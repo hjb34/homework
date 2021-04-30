@@ -1,3 +1,44 @@
 /* =============
     Footer
 ============= */
+
+.footer {
+	background: $aztec;
+	padding: 50px 0;
+
+	.address {
+		a {
+			color: $seaFog;
+		}
+	}
+
+	h1,
+	h2 {
+		color: $seaFog;
+	}
+
+	.icon {
+		color: $tangerine;
+	}
+
+	address {
+		color: $gunMetal;
+	}
+
+	.newsletter {
+		input {
+			padding: 20px;
+			width: 100%;
+		}
+		button {
+			padding: 5px 10px;
+			border: none;
+			background: $tangerine;
+		}
+	}
+
+	.social-icon a {
+		color: white;
+		padding: 0 5px 0 0;
+	}
+}
