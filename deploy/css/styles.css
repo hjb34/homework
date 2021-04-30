@@ -394,17 +394,18 @@ main {
 }
 .hero a {
   display: grid;
-  grid-template-columns: 75% auto;
+  grid-template-columns: 90% auto;
+  align-items: center;
 }
 @media (min-width: 768px) {
   .hero ul {
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(6, 1fr);
   }
   .hero ul .truck {
-    grid-column: span 5;
+    grid-column: span 3;
   }
   .hero ul .location {
-    grid-column: span 7;
+    grid-column: span 3;
   }
 }
 
@@ -420,10 +421,10 @@ main {
 }
 @media (min-width: 768px) {
   .planning .plan {
-    grid-template-columns: 400px auto;
+    grid-template-columns: 70% auto;
   }
   .planning ul {
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: 50% auto;
     grid-gap: 20px;
   }
 }
@@ -436,7 +437,18 @@ main {
 }
 @media (min-width: 768px) {
   .hero-2 ul {
-    grid-template-columns: 50% auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "truck-1 truck-1 truck-2 truck-2" "truck-1 truck-1 truck-2 truck-2" "truck-1 truck-1 truck-2 truck-2";
+  }
+  .hero-2 .truck-1 {
+    grid-area: truck-1;
+  }
+  .hero-2 .truck-2 {
+    grid-area: truck-2;
+  }
+  .hero-2 .truck-3 {
+    grid-area: truck-3;
   }
 }
 
@@ -549,9 +561,8 @@ header {
 .footer address {
   color: #c8c7bc;
 }
-.footer .newsletter input {
+.footer .newsletter form input {
   padding: 20px;
-  width: 100%;
 }
 .footer .newsletter button {
   padding: 5px 10px;
@@ -587,6 +598,9 @@ header {
   width: 100%;
 }
 
+.hero ul .details h5 {
+  display: none;
+}
 .hero ul .details a {
   color: #2a3036;
   padding: 20px;
@@ -604,6 +618,12 @@ header {
 .hero ul .location a:hover {
   background: #d1ab00;
 }
+@media (min-width: 768px) {
+  .hero ul .details h5 {
+    display: inline;
+    padding: 10px;
+  }
+}
 
 .planning .plan {
   margin: 20px 0;
@@ -617,6 +637,12 @@ header {
 }
 .planning .plan button:hover {
   background: #9e8200;
+}
+@media (min-width: 1024px) {
+  .planning {
+    width: 75%;
+    margin: 0 auto;
+  }
 }
 
 .hero-2 {
@@ -633,7 +659,6 @@ header {
 }
 .hero-2 .truck-2 {
   background-image: url("/deploy/img/hero-2/hero-2-2.jpg");
-  height: 700px;
   width: 100%;
 }
 .hero-2 .truck-3 {
@@ -642,12 +667,6 @@ header {
   width: 100%;
   display: none;
 }
-@media (min-width: 768px) {
-  .hero-2 .image {
-    height: 700px;
-  }
-}
-
 @media (min-width: 768px) {
   .new {
     width: 75%;

@@ -8,6 +8,9 @@
 
 .hero {
 	ul {
+		.details h5 {
+			display: none;
+		}
 		.details a {
 			color: $aztec;
 			padding: 20px;
@@ -23,6 +26,13 @@
 			background: $tangerine;
 			&:hover {
 				background: darken($tangerine, 10%);
+			}
+		}
+
+		@include md {
+			.details h5 {
+				display: inline;
+				padding: 10px;
 			}
 		}
 	}

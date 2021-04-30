@@ -54,18 +54,19 @@ main {
 
 	a {
 		display: grid;
-		grid-template-columns: 75% auto;
+		grid-template-columns: 90% auto;
+		align-items: center;
 	}
 
 	@include md {
 		ul {
-			grid-template-columns: repeat(12, 1fr);
+			grid-template-columns: repeat(6, 1fr);
 
 			.truck {
-				grid-column: span 5;
+				grid-column: span 3;
 			}
 			.location {
-				grid-column: span 7;
+				grid-column: span 3;
 			}
 		}
 	}
@@ -85,10 +86,10 @@ main {
 
 	@include md {
 		.plan {
-			grid-template-columns: 400px auto;
+			grid-template-columns: 70% auto;
 		}
 		ul {
-			grid-template-columns: repeat(12, 1fr);
+			grid-template-columns: 50% auto;
 			grid-gap: 20px;
 		}
 	}
@@ -103,7 +104,22 @@ main {
 
 	@include md {
 		ul {
-			grid-template-columns: 50% auto;
+			grid-template-columns: repeat(4, 1fr);
+			grid-template-rows: repeat(3, 1fr);
+			grid-template-areas:
+				"truck-1 truck-1 truck-2 truck-2"
+				"truck-1 truck-1 truck-2 truck-2"
+				"truck-1 truck-1 truck-2 truck-2";
+		}
+
+		.truck-1 {
+			grid-area: truck-1;
+		}
+		.truck-2 {
+			grid-area: truck-2;
+		}
+		.truck-3 {
+			grid-area: truck-3;
 		}
 	}
 }
