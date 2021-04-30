@@ -469,6 +469,12 @@ main {
     grid-area: new-5;
   }
 }
+@media (min-width: 1024px) {
+  .new ul {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: "new-1 new-1 new-2 new-2 new-3 new-3" ". new-4 new-4 new-5 new-5 .";
+  }
+}
 
 .footer {
   grid-area: footer;
@@ -605,6 +611,24 @@ header {
   .hero-2 .image {
     height: 700px;
   }
+}
+
+@media (min-width: 768px) {
+  .new {
+    width: 75%;
+    margin: 30px auto;
+  }
+}
+.new li {
+  background: #f8f9fa;
+}
+.new li .new-content {
+  padding: 0 30px 30px;
+}
+.new li button {
+  background: #ffd205;
+  border: none;
+  padding: 5px 10px;
 }
 
 .new-image {
