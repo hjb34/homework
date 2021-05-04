@@ -8,6 +8,9 @@
 
 .hero {
 	ul {
+		a {
+			text-decoration: none;
+		}
 		.details h5 {
 			display: none;
 		}
@@ -24,16 +27,21 @@
 		}
 		.location a {
 			background: $tangerine;
+
+			.bold {
+				font-weight: 600;
+			}
+
 			&:hover {
 				background: darken($tangerine, 10%);
 			}
 		}
 
-		@include md {
-			.details h5 {
-				display: inline;
-				padding: 10px;
-			}
-		}
+		// @include md {
+		// 	.details h5 {
+		// 		display: inline;
+		// 		padding: 10px;
+		// 	}
+		// }
 	}
 }

@@ -4,6 +4,12 @@
 		padding: 20px;
 		background: $offWhite;
 
+		h1 {
+			color: $aztec;
+			font-weight: 400;
+			font-size: rem-calc(35);
+		}
+
 		button {
 			background: $tangerine;
 			padding: 10px 20px;

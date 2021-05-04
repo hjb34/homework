@@ -1,7 +1,7 @@
 .new {
-	@include md {
-		width: 75%;
-		margin: 30px auto;
+	h1 {
+		font-weight: 400;
+		font-size: rem-calc(27);
 	}
 
 	li {
@@ -16,6 +16,16 @@
 			border: none;
 			padding: 5px 10px;
 		}
+
+		p {
+			font-size: rem-calc(16);
+			line-height: 1.4;
+		}
+	}
+
+	@include md {
+		width: 75%;
+		margin: 30px auto;
 	}
 }
 

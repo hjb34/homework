@@ -1,8 +1,9 @@
 .search {
 	height: 70px;
-	margin: 30px 10px 0;
+	margin: 10px 10px 0;
 
 	form input {
+		font-size: rem-calc(35);
 		border: none;
 		border-bottom: 1px solid $cadetGrey;
 		padding: 5px;
