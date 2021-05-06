@@ -8,10 +8,16 @@
 
 	.address {
 		line-height: 1.5;
+		border-bottom: 1px solid $seaFog;
+		padding-bottom: 20px;
 		a {
 			font-size: rem-calc(12);
 			text-decoration: none;
 			color: $seaFog;
+		}
+
+		&:last-child {
+			border: none;
 		}
 	}
 
