@@ -4,29 +4,24 @@
 	.image {
 		background-repeat: no-repeat;
 		background-size: cover;
+		background-position: center;
 	}
 
 	.truck-1 {
 		background-image: url("/deploy/img/hero-2/hero-2-1.jpg");
-		height: 500px;
-		width: 100%;
 	}
 	.truck-2 {
 		background-image: url("/deploy/img/hero-2/hero-2-2.jpg");
-		// height: 700px;
-		width: 100%;
 	}
 
 	.truck-3 {
 		background-image: url("/deploy/img/hero-2/hero-2-3.jpg");
-		height: 500px;
-		width: 100%;
 		display: none;
 	}
 
-	@include md {
-		.image {
-			// height: 700px;
+	@include xl {
+		.truck-3 {
+			display: inline;
 		}
 	}
 }
