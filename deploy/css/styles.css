@@ -616,7 +616,7 @@ header {
   margin: 10px 10px 0;
 }
 .search form input {
-  font-size: 2.1875rem;
+  font-size: 1rem;
   border: none;
   border-bottom: 1px solid #93a8ac;
   padding: 5px;
@@ -627,12 +627,17 @@ header {
   border-radius: 4px;
   height: 50px;
 }
+@media (min-width: 768px) {
+  .search form input {
+    font-size: 2.1875rem;
+  }
+}
 
 .hero-img {
   background: url("../../../deploy/img/hero/hero.jpg");
   background-size: cover;
   background-position: center;
-  height: 700px;
+  height: 50vh;
   width: 100%;
 }
 
