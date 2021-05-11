@@ -6,6 +6,10 @@
 	background: $aztec;
 	padding: 50px 0;
 
+	.content {
+		margin: 15px;
+	}
+
 	.address {
 		line-height: 1.5;
 		border-bottom: 1px solid $seaFog;
@@ -45,10 +49,25 @@
 	}
 
 	.newsletter {
+		form {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-end;
+		}
 		form input {
-			padding: 20px;
+			background: $casper;
+			color: $blueCharcoal;
+			margin-bottom: 15px;
+			padding: 10px 20px;
+			width: 88%;
+
+			&::placeholder {
+				color: $blueCharcoal;
+			}
 		}
 		button {
+			font-size: 14px;
+			width: 75px;
 			padding: 5px 10px;
 			border: none;
 			background: $tangerine;

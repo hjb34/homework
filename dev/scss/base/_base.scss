@@ -196,28 +196,32 @@ main {
 	}
 
 	@include md {
-		display: grid;
-		grid-template-columns: repeat(6, 1fr);
-		grid-gap: 50px;
+		.content {
+			display: grid;
+			grid-template-columns: repeat(6, 1fr);
+			grid-gap: 50px;
 
-		grid-template-areas:
-			". locations . newsletter"
-			". locations . socials";
+			grid-template-areas:
+				". locations . newsletter"
+				". locations . socials";
 
-		.locations {
-			grid-area: locations;
-		}
+			.locations {
+				grid-area: locations;
+			}
 
-		.newsletter {
-			grid-area: newsletter;
-		}
+			.newsletter {
+				grid-area: newsletter;
+			}
 
-		.socials {
-			grid-area: socials;
+			.socials {
+				grid-area: socials;
+			}
 		}
 	}
 
 	@include lg {
-		grid-template-areas: ". locations . newsletter . socials";
+		.content {
+			grid-template-areas: ". locations . newsletter . socials";
+		}
 	}
 }

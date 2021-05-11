@@ -510,24 +510,24 @@ main {
   grid-template-columns: 20px 200px;
 }
 @media (min-width: 768px) {
-  .footer {
+  .footer .content {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-gap: 50px;
     grid-template-areas: ". locations . newsletter" ". locations . socials";
   }
-  .footer .locations {
+  .footer .content .locations {
     grid-area: locations;
   }
-  .footer .newsletter {
+  .footer .content .newsletter {
     grid-area: newsletter;
   }
-  .footer .socials {
+  .footer .content .socials {
     grid-area: socials;
   }
 }
 @media (min-width: 1024px) {
-  .footer {
+  .footer .content {
     grid-template-areas: ". locations . newsletter . socials";
   }
 }
@@ -563,6 +563,9 @@ header {
   background: #2a3036;
   padding: 50px 0;
 }
+.footer .content {
+  margin: 15px;
+}
 .footer .address {
   line-height: 1.5;
   border-bottom: 1px solid #e0dfd5;
@@ -594,10 +597,24 @@ header {
   color: #c8c7bc;
   font-size: 0.75rem;
 }
+.footer .newsletter form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
 .footer .newsletter form input {
-  padding: 20px;
+  background: #adb5bd;
+  color: #262a2f;
+  margin-bottom: 15px;
+  padding: 10px 20px;
+  width: 88%;
+}
+.footer .newsletter form input::placeholder {
+  color: #262a2f;
 }
 .footer .newsletter button {
+  font-size: 14px;
+  width: 75px;
   padding: 5px 10px;
   border: none;
   background: #ffd205;
