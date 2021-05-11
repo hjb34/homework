@@ -514,7 +514,7 @@ main {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-gap: 50px;
-    grid-template-areas: ". locations . newsletter" ". locations . socials";
+    grid-template-areas: "locations locations locations newsletter newsletter newsletter" "locations locations locations socials socials socials";
   }
   .footer .content .locations {
     grid-area: locations;
@@ -528,7 +528,7 @@ main {
 }
 @media (min-width: 1024px) {
   .footer .content {
-    grid-template-areas: ". locations . newsletter . socials";
+    grid-template-areas: "locations locations newsletter newsletter socials socials";
   }
 }
 
@@ -618,6 +618,13 @@ header {
   padding: 5px 10px;
   border: none;
   background: #ffd205;
+}
+@media (min-width: 1024px) {
+  .footer .socials {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
 }
 .footer .social-icon a {
   font-size: 26px;

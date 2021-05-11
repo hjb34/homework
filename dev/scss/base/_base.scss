@@ -202,8 +202,8 @@ main {
 			grid-gap: 50px;
 
 			grid-template-areas:
-				". locations . newsletter"
-				". locations . socials";
+				"locations locations locations newsletter newsletter newsletter"
+				"locations locations locations socials socials socials";
 
 			.locations {
 				grid-area: locations;
@@ -221,7 +221,7 @@ main {
 
 	@include lg {
 		.content {
-			grid-template-areas: ". locations . newsletter . socials";
+			grid-template-areas: "locations locations newsletter newsletter socials socials";
 		}
 	}
 }

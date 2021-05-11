@@ -74,6 +74,14 @@
 		}
 	}
 
+	@include lg {
+		.socials {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-end;
+		}
+	}
+
 	.social-icon a {
 		font-size: 26px;
 		color: white;
