@@ -689,6 +689,7 @@ header {
   margin: 20px 0;
   padding: 20px;
   background: #f8f9fa;
+  box-shadow: 1px 1px 3px #93a8ac;
 }
 .planning .plan h1 {
   color: #2a3036;
