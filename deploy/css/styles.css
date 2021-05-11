@@ -542,7 +542,7 @@ main {
 }
 @media (min-width: 1024px) {
   .footer .content {
-    grid-template-areas: "locations locations newsletter newsletter socials .";
+    grid-template-areas: ". locations newsletter newsletter socials .";
   }
 }
 

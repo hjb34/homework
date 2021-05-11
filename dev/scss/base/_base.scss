@@ -239,7 +239,7 @@ main {
 
 	@include lg {
 		.content {
-			grid-template-areas: "locations locations newsletter newsletter socials .";
+			grid-template-areas: ". locations newsletter newsletter socials .";
 		}
 	}
 }
