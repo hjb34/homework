@@ -399,13 +399,27 @@ main {
 }
 @media (min-width: 768px) {
   .hero ul {
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(8, 1fr);
   }
   .hero ul .truck {
-    grid-column: span 3;
+    grid-column: span 4;
   }
   .hero ul .location {
-    grid-column: span 3;
+    grid-column: span 4;
+  }
+}
+@media (min-width: 1024px) {
+  .hero ul {
+    grid-template-columns: repeat(8, 1fr);
+  }
+  .hero a {
+    grid-template-columns: repeat(8, 1fr);
+  }
+  .hero .content-1 {
+    grid-column: 3/8;
+  }
+  .hero .content-2 {
+    grid-column: span 6;
   }
 }
 
@@ -528,7 +542,7 @@ main {
 }
 @media (min-width: 1024px) {
   .footer .content {
-    grid-template-areas: "locations locations newsletter newsletter socials socials";
+    grid-template-areas: "locations locations newsletter newsletter socials .";
   }
 }
 

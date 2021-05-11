@@ -60,14 +60,32 @@ main {
 
 	@include md {
 		ul {
-			grid-template-columns: repeat(6, 1fr);
+			grid-template-columns: repeat(8, 1fr);
 
 			.truck {
-				grid-column: span 3;
+				grid-column: span 4;
 			}
 			.location {
-				grid-column: span 3;
+				grid-column: span 4;
 			}
+		}
+	}
+
+	@include lg {
+		ul {
+			grid-template-columns: repeat(8, 1fr);
+		}
+
+		a {
+			grid-template-columns: repeat(8, 1fr);
+		}
+
+		.content-1 {
+			grid-column: 3 / 8;
+		}
+
+		.content-2 {
+			grid-column: span 6;
 		}
 	}
 }
@@ -221,7 +239,7 @@ main {
 
 	@include lg {
 		.content {
-			grid-template-areas: "locations locations newsletter newsletter socials socials";
+			grid-template-areas: "locations locations newsletter newsletter socials .";
 		}
 	}
 }
