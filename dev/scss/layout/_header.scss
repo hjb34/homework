@@ -5,4 +5,99 @@
 header {
 	background: $aztec;
 	padding: 10px;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+
+	> div {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+
+		#button-container {
+			padding: 10px;
+			text-align: right;
+
+			button {
+				background-color: $tangerine;
+				border-radius: 23px;
+				color: $black;
+				display: inline-block;
+				font-size: rem-calc(18);
+				font-weight: 700;
+				padding: 10px 20px;
+				border: none;
+				transition: 0.25s;
+
+				&:hover {
+					background-color: $black;
+					color: $white;
+				}
+			}
+		}
+
+		#burger-container {
+			align-items: center;
+			display: flex;
+			padding: 10px;
+
+			@include lg {
+				display: none !important;
+			}
+
+			i {
+				cursor: pointer;
+				font-size: rem-calc(30);
+			}
+		}
+
+		#nav-container {
+			background-color: $aztec;
+			display: none;
+			width: 100%;
+			position: absolute;
+			top: 60px;
+			.nav-btns {
+				display: inline-block;
+				text-decoration: none;
+				margin: 0 auto;
+				color: $white;
+				padding: 10px 5px;
+				width: 100%;
+				border-bottom: 2px solid transparent;
+				&:hover {
+					// background: $blueCharcoal;
+					border-bottom: 2px solid $seaFog;
+				}
+				&:active {
+					background: $tangerine;
+				}
+			}
+			ul li {
+				text-align: center;
+			}
+			@include lg {
+				background-color: none;
+				display: block !important;
+				position: unset;
+				width: auto;
+				.nav-btns {
+					color: $seaFog;
+				}
+				ul {
+					display: flex;
+					align-items: center;
+				}
+				ul li {
+					margin: 0 20px;
+				}
+			}
+		}
+	}
+
+	@include lg {
+		display: flex;
+	}
 }

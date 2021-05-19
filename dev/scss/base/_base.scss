@@ -1,6 +1,14 @@
 /* =============
     Base
 ============= */
+body {
+	margin-top: 140px;
+
+	@include lg {
+		margin-top: 80px;
+	}
+}
+
 figure {
 	margin: 0;
 	padding: 0;

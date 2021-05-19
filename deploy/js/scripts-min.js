@@ -1,0 +1,1 @@
+import $ from"jquery";let $nav=$("nav[data-nav]"),isVisible=!1;console.log("working"),$(".nav-btns").on("click",(function(){console.log("click"),!1===isVisible?($nav.show(),isVisible=!0):($nav.hide(),isVisible=!1)}));
