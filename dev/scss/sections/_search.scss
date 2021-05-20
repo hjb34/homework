@@ -1,6 +1,6 @@
 .search {
 	height: 70px;
-	margin: 10px 10px 0;
+	margin: 140px 10px 0;
 
 	form input {
 		font-size: rem-calc(16);
@@ -20,5 +20,9 @@
 		form input {
 			font-size: rem-calc(35);
 		}
+	}
+
+	@include lg {
+		margin-top: 90px;
 	}
 }

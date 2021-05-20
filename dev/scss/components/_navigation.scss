@@ -1,3 +1,45 @@
 /* =============
     Navigation
 ============= */
+#nav-container {
+	background-color: $aztec;
+	display: none;
+	width: 100%;
+	position: absolute;
+	top: 118px;
+	.nav-btns {
+		display: inline-block;
+		text-decoration: none;
+		margin: 0 auto;
+		color: $white;
+		padding: 10px 5px;
+		width: 100%;
+		border-bottom: 2px solid transparent;
+		&:hover {
+			// background: $blueCharcoal;
+			border-bottom: 2px solid $seaFog;
+		}
+		&:active {
+			background: $tangerine;
+		}
+	}
+	ul li {
+		text-align: center;
+	}
+	@include lg {
+		background-color: none;
+		display: block !important;
+		position: unset;
+		width: auto;
+		.nav-btns {
+			color: $seaFog;
+		}
+		ul {
+			display: flex;
+			align-items: center;
+		}
+		ul li {
+			margin: 0 20px;
+		}
+	}
+}
