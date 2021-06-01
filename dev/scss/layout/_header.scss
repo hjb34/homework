@@ -8,12 +8,22 @@ header {
 	position: fixed;
 	top: 0;
 	width: 100%;
+	display: flex;
+	justify-content: space-between;
+
+	.desktop-logo {
+		display: none;
+
+		@include lg {
+			display: inline-block;
+		}
+	}
 
 	> div {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		width: 100%;
+		// width: 100%;
 
 		#button-container {
 			padding: 10px;
@@ -55,5 +65,10 @@ header {
 
 	@include lg {
 		display: flex;
+		justify-content: center;
+
+		.mobile-logo {
+			display: none;
+		}
 	}
 }
